@@ -1,6 +1,6 @@
-import nature from "../src/images/nature.jpg";
-import dog from "../src/images/dog.jpg";
-import dog1 from "../src/images/dog1.jpg";
+import nature from "../images/nature.jpg";
+import dog from "../images/dog.jpg";
+import dog1 from "../images/dog1.jpg";
 function Project () {
     return (
 <div>
