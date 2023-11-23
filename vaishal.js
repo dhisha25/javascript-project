@@ -15,7 +15,7 @@ export default class Dhisha extends Component  {
         <h2>{this.state.js.map((a)=>(a))}</h2>
         <img src={nature} class="img-thumbnail" width="390" height="236"></img>
         <img src={dog} class="rounded" width="390" height="236"></img>
-        <img src={dog1} class="rounded-circle" width="390" height="236"></img>
+        <img src={dog1} class="rounded" width="390" height="236"></img>
         <p class="text-success">I am dhisha and My hobby is reading books</p>
         <p class="text-info">apple</p>
         <p class="text-warning">banana</p>
@@ -40,6 +40,45 @@ export default class Dhisha extends Component  {
         <p>pumpkin</p>
         <p>mushroom</p>
         <p>brinjal</p>
+        <button type="button" class="btn">Basic</button>
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-danger">Danger</button>       
+<button type="button" class="btn btn-dark">Dark</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-link">Link</button>
+
+
+
+
+<br></br>
+<a href="#" class="btn btn-success">Link Button</a>
+<button type="button" class="btn btn-outline-primary">Primary</button>
+<button type="button" class="btn btn-outline-secondary">Secondary</button>
+<button type="button" class="btn btn-outline-success">Success</button>
+<button type="button" class="btn btn-outline-info">Info</button>
+<button type="button" class="btn btn-outline-warning">Warning</button>
+<button type="button" class="btn btn-outline-danger">Danger</button>
+<button type="button" class="btn btn-outline-dark">Dark</button>
+<button type="button" class="btn btn-outline-light text-dark">Light</button>
+<button type="button" class="btn btn-primary btn-lg">Large</button>
+<button type="button" class="btn btn-success" disabled>Default</button>
+<button type="button" class="btn btn-info btn-sm">Small</button>
+<button class="btn btn-primary" disabled>
+  <span class="spinner-border spinner-border-sm"></span>
+  Loading..
+</button>
+<button class="btn btn-success" >
+  <span class="spinner-grow spinner-grow-sm"></span>
+  Loading..
+</button>
+<div class="d-grid">
+  <button type="button" class="btn btn-primary btn-block">Full-Width Button</button>
+</div>
+        
         <div class="container mt-5">
   <div class="row">
     <div class="col-md-4">
@@ -56,8 +95,10 @@ export default class Dhisha extends Component  {
       <h3>Column 3</h3>        
       <p> elit...</p>
       <p> laboris...</p>
+
     </div>
   </div>
+
   <table class="table table-bordered">
     <thead>
       <tr>
