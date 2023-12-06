@@ -144,7 +144,65 @@ export default class Dhisha extends Component  {
       </tr>
     </tbody>
   </table>
+  <h1>Newdata<span class="badge bg-success">New</span></h1>
+  <h1>Newdata<span class="badge rounded-pill bg-primary">New</span></h1>
+  <h1>Newdata<span class="badge bg-secondary">New</span></h1>
+  <h1>Newdata<span class="badge bg-info">New</span></h1>
+  <h1>Newdata<span class="badge bg-dark">New</span></h1>
+  <h1>Newdata<span class="badge bg-warning">New</span></h1>
+  <h1>Newdata<span class="badge bg-danger">New</span></h1>
+  <h1>Newdata<span class="badge bg-light">New</span></h1>
+  <button type="button" class="btn btn-success">
+    Notifications <span class="badge bg-dark">7</span>
+  </button>
+ <br></br>
+ <br></br>
+  <div class="spinner-grow text-muted"></div>
+  <div class="spinner-border text-primary"></div>
+  <div class="spinner-border text-secondary"></div>
+  <div class="spinner-grow text-success"></div>
+  <div class="spinner-border text-info"></div>
+  <div class="spinner-border text-dark"></div>
+  <div class="spinner-border text-warning"></div>
+  <div class="spinner-border text-danger"></div>
+  <div class="spinner-border text-light"></div>
 </div>
+<div class="progress">
+  <div class="progress-bar" style={{width:"10%"}}></div>
+</div>
+<br></br>
+<div class="progress">
+  <div class="progress-bar progress-bar-striped  progress-bar-animated" style={{width:"20%"}}>20%</div>
+</div>
+<br></br>
+<div class="progress">
+  <div class="progress-bar bg-primary" style={{width:"30%"}}></div>
+</div>
+<br></br>
+<div class="progress">
+  <div class="progress-bar bg-dark" style={{width:"40%"}}></div>
+</div>
+<br></br>
+<div class="progress">
+  <div class="progress-bar bg-info" style={{width:"50%"}}></div>
+</div>
+<br></br>
+<div class="progress">
+  <div class="progress-bar bg-secondary" style={{width:"60%"}}></div>
+</div>
+<br></br>
+<div class="progress">
+  <div class="progress-bar bg-warning" style={{width:"70%"}}></div>
+</div>
+<br></br>
+<div class="progress">
+  <div class="progress-bar bg-danger" style={{width:"80%"}}></div>
+</div>
+<br></br>
+<div class="progress">
+  <div class="progress-bar progress-bar-striped  progress-bar-animated" style={{width:"90%"}}>90%</div>
+</div>
+
         </div>
         )
     }}
