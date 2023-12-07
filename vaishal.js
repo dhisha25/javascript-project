@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import nature from "../images/nature.jpg";
 import dog from "../images/dog.jpg";
 import dog1 from "../images/dog1.jpg";
+import user1 from "../images/user1.jpeg";
 export default class Dhisha extends Component  {
     constructor(props){
         super(props);
@@ -50,10 +51,6 @@ export default class Dhisha extends Component  {
 <button type="button" class="btn btn-dark">Dark</button>
 <button type="button" class="btn btn-light">Light</button>
 <button type="button" class="btn btn-link">Link</button>
-
-
-
-
 <br></br>
 <a href="#" class="btn btn-success">Link Button</a>
 <button type="button" class="btn btn-outline-primary">Primary</button>
@@ -202,7 +199,47 @@ export default class Dhisha extends Component  {
 <div class="progress">
   <div class="progress-bar progress-bar-striped  progress-bar-animated" style={{width:"90%"}}>90%</div>
 </div>
-
+<br></br>
+<br></br>
+<div class="card">
+  <div class="card-header">Head</div>
+  <div class="card-body">Content</div>
+  <div class="card-footer">Foot</div>
+</div>
+<div class="card bg-primary text-white">
+    <div class="card-body">Primary card</div>
+  </div>
+  
+  <div class="card bg-secondary text-white">
+    <div class="card-body">Apple</div>
+  </div>
+  <div class="card bg-info text-white">
+    <div class="card-body">Orange</div>
+  </div>
+  <div class="card bg-warning text-white">
+    <div class="card-body">banana</div>
+  </div>
+  <div class="card bg-dark text-white">
+    <div class="card-body">grapes</div>
+  </div>
+  <div class="card bg-danger text-white">
+    <div class="card-body">pineapple</div>
+  </div>
+  <div class="card bg-light text-dark">
+    <div class="card-body">cherry</div>
+  </div>
+  <div class="card bg-success text-white">
+    <div class="card-body">kiwi</div>
+  </div>
+  <br></br>
+  <div class="card" style={{width:"400px"}}>
+  <img src={user1}></img>
+  <div class="card-body">
+    <h4 class="card-title">Dhisha</h4>
+    <p class="card-text">B Tech computer science and business system</p>
+    <a href="home" class="btn btn-primary">See Profile</a>
+  </div>
+</div>
         </div>
         )
     }}
