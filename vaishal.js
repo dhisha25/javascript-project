@@ -99,7 +99,7 @@ export default class Dhisha extends Component  {
   <table class="table table-bordered">
     <thead>
       <tr>
-        <th>Firstname</th>
+        <th rowSpan={2}>Firstname</th>
         <th>Lastname</th>   
       </tr>
     </thead>
@@ -141,6 +141,20 @@ export default class Dhisha extends Component  {
       </tr>
     </tbody>
   </table>
+  <table>
+  <tr>
+    <th>Name</th>
+    <td>Jack</td>
+  </tr>
+  <tr>
+    <th rowspan="2">Phone</th>
+    <td>52322</td>
+  </tr>
+  <tr>
+    <td>555-8745</td>
+  </tr>
+</table>
+
   <h1>Newdata<span class="badge bg-success">New</span></h1>
   <h1>Newdata<span class="badge rounded-pill bg-primary">New</span></h1>
   <h1>Newdata<span class="badge bg-secondary">New</span></h1>
@@ -239,6 +253,39 @@ export default class Dhisha extends Component  {
     <p class="card-text">B Tech computer science and business system</p>
     <a href="home" class="btn btn-primary">See Profile</a>
   </div>
+  <ul class="pagination pagination-sm justify-content-end">
+  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+  <li class="page-item disabled"><a class="page-link" href="#">1</a></li>
+  <li class="page-item active"><a class="page-link" href="#">2</a></li>
+  <li class="page-item"><a class="page-link" href="#">3</a></li>
+  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+</ul>
+<ul class="pagination pagination-sm justify-content-center">
+  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+  <li class="page-item disabled"><a class="page-link" href="#">1</a></li>
+  <li class="page-item active"><a class="page-link" href="#">2</a></li>
+  <li class="page-item"><a class="page-link" href="#">3</a></li>
+  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+</ul>
+<ul class="pagination">
+  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+  <li class="page-item disabled"><a class="page-link" href="#">1</a></li>
+  <li class="page-item active"><a class="page-link" href="#">2</a></li>
+  <li class="page-item"><a class="page-link" href="#">3</a></li>
+  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+</ul>
+<div class="dropup">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+      Dropdown button
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Link 1</a></li>
+      <li><a class="dropdown-item" href="#">Link 2</a></li>
+      <li><a class="dropdown-item" href="#">Link 3</a></li>
+      <li><hr class="dropdown-divider"/></li> 
+    </ul>
+  </div>
+
 </div>
         </div>
         )
