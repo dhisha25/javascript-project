@@ -305,16 +305,38 @@ export default class Dhisha extends Component  {
   <li class="nav-item">
     <a class="nav-link disabled" href="#">Disabled</a>
   </li>
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Dropdown</a>
-    <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Link 1</a></li>
-      <li><a class="dropdown-item" href="#">Link 2</a></li>
-      <li><a class="dropdown-item" href="#">Link 3</a></li>
-    </ul>
-  </li>
+ <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Link</a></li>
+    <li><a class="dropdown-item" href="#">Another link</a></li>
+    <li><a class="dropdown-item" href="#">A third link</a></li>
+  </ul>
+</li>
 </ul>
 <div>
+  <nav class="navbar navbar-expand-sm bg-danger navbar-dark fixed-top" style={{position:"fixed"}}>
+  <div class="container-fluid">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search"/>
+        <button class="btn btn-primary" type="button">Search</button>
+      </form>
+  </div>
+  </nav>
 <ul class="nav nav-tabs" role="tablist">
     <li class="nav-item">
       <a class="nav-link " data-bs-toggle="tab" href="#home">Home</a>
