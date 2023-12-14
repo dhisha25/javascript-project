@@ -3,13 +3,31 @@ import nature from "../images/nature.jpg";
 import dog from "../images/dog.jpg";
 import dog1 from "../images/dog1.jpg";
 import user1 from "../images/user1.jpeg";
+import flower1 from "../images/flower1.jpeg";
+import flower2 from "../images/flower2.jpeg";
+import flower3 from "../images/flower3.jpeg";
+import { Icon } from "@iconify/react";
+
+
 export default class Dhisha extends Component  {
     constructor(props){
         super(props);
         this.state={
                    js:["react.js"],
+                   image:[flower1,flower2,flower3],currentImageIndex: 0,
                }
     }
+    nextImage = () => {
+      this.setState((prevState) => ({
+        currentImageIndex: (prevState.currentImageIndex + 1) % 4,
+      }));
+    };
+    prevImage = () => {
+      this.setState((prevState) => ({
+        currentImageIndex:
+          prevState.currentImageIndex === 0 ? 3 : prevState.currentImageIndex - 1,
+      }));
+    };
     render(){ 
         return (
     <div>
@@ -388,6 +406,45 @@ export default class Dhisha extends Component  {
       <h3>Menu 2</h3>
       <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
     </div>
+  </div>
+  <br></br>
+
+ 
+<div class="container">
+          <div class="row justify-content-center">
+            <div class="col-10">
+              <div className="image-slider text-center">
+                <h4
+                  className="skillnew"
+                  align="center"
+                  style={{ color: "rgb(32, 43, 93)", fontWeight: "700" }}
+                >
+                  Flowers
+                </h4>
+
+                <Icon
+                  icon="fa-solid:less-than"
+                  color="gray"
+                  style={{ cursor: "pointer" }}
+                  onClick={this.prevImage}
+                  className="lefti"
+                />
+
+<img
+                  className="conimgnew equal-width-image"
+                  src={this.state.image[this.state.currentImageIndex]}
+                  alt={`Image ${this.state.currentImageIndex + 1}`}
+                />
+<Icon
+                  icon="fa-solid:greater-than"
+                  color="gray"
+                  onClick={this.nextImage}
+                  style={{ cursor: "pointer" }}
+                  className="righti"
+                />
+</div>
+            </div>
+  </div>
   </div>
   </div>
 
