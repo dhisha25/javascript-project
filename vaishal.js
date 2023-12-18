@@ -446,6 +446,55 @@ export default class Dhisha extends Component  {
             </div>
   </div>
   </div>
+  <div class="mb-3 mt-3">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email"/>
+    </div>
+    <div class="mb-3">
+    <label for="pwd" class="form-label">Password:</label>
+    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd"/>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+<br></br>
+  <br></br>
+  <form>
+  <label for="fname">First name:</label>
+<input type="text" id="fname" name="fname" />
+        <br />
+        <label for="lname">Last name:</label>
+        <br />
+        <input type="text" id="lname" name="lname" value="Kumar" />
+        <br /> <br />
+<input type="radio" id="html" name="fav_language" value="HTML1" />
+        <label for="html">HTML</label>
+        <br />
+        <input type="radio" id="css" name="fav_language" value="CSS" />
+        <label for="css">CSS</label>
+        <br />
+        <input type="radio" id="js" name="fav_language" value="JS" />
+        <label for="javascript">JavaScript</label>
+        <br />
+        <br />
+        <input type="checkbox" value="Apple1" id="apple1" name="fruit" />
+        <label> I have an Apple</label>
+        <br />
+        <input type="checkbox" value="Orange1" id="orange1" name="fruit" />
+        <label> I have an Orange</label>
+        <br />
+        <input type="checkbox" value="Grapes1" id="grapes1" name="fruit" />
+        <label> I have a Grapes</label>
+        <br />
+        <label for="phone number">Phone number:</label>
+<input type="number" id="phone number" name="phone number" />
+<br></br>
+        {/* input for type="submit" it will appear as button */}
+        <input type="submit" value="Submit" />
+        <br></br>
+        <label for="comment">Comments:</label>
+<textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+        </form>
+
+
   </div>
 
 </div>
