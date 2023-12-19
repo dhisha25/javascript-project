@@ -7,6 +7,7 @@ import flower1 from "../images/flower1.jpeg";
 import flower2 from "../images/flower2.jpeg";
 import flower3 from "../images/flower3.jpeg";
 import { Icon } from "@iconify/react";
+import { Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 
 
 export default class Dhisha extends Component  {
@@ -15,6 +16,8 @@ export default class Dhisha extends Component  {
         this.state={
                    js:["react.js"],
                    image:[flower1,flower2,flower3],currentImageIndex: 0,
+                   model1:false,
+                   close:false
                }
     }
     nextImage = () => {
@@ -22,6 +25,16 @@ export default class Dhisha extends Component  {
         currentImageIndex: (prevState.currentImageIndex + 1) % 4,
       }));
     };
+    togglemodal5 = () => {
+    this.setState({
+      model1: !this.state.model1,
+    });
+  };
+  closebtn = () => {
+    this.setState({
+      close: !this.state.close,
+    });
+  };
     prevImage = () => {
       this.setState((prevState) => ({
         currentImageIndex:
@@ -454,7 +467,15 @@ export default class Dhisha extends Component  {
     <label for="pwd" class="form-label">Password:</label>
     <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd"/>
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary" onClick={this.togglemodal5}>Submit</button>
+  {this.state.model1 && (
+            <Modal isOpen={this.state.model1} centered toggle={this.togglemodal5}>
+              <ModalHeader toggle={this.togglemodal5}>Dhisha</ModalHeader>
+              <ModalBody>I like to play</ModalBody>
+              <ModalFooter>
+                <button class="btn btn-danger" onClick={this.togglemodal5}>close</button>
+              </ModalFooter>
+              </Modal>)}
 <br></br>
   <br></br>
   <form>
