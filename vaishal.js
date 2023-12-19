@@ -471,7 +471,7 @@ export default class Dhisha extends Component  {
   {this.state.model1 && (
             <Modal isOpen={this.state.model1} centered toggle={this.togglemodal5}>
               <ModalHeader toggle={this.togglemodal5}>Dhisha</ModalHeader>
-              <ModalBody>I like to play</ModalBody>
+              <ModalBody>Chances are your friends are discussing their favorite (and least favorite) books on Goodreads. What will you discover? Because Deborah liked… Because Deborah liked… “Be yourself; everyone else is already taken.” Find and read more books you’ll love, and keep track of the books you want to read.</ModalBody>
               <ModalFooter>
                 <button class="btn btn-danger" onClick={this.togglemodal5}>close</button>
               </ModalFooter>
