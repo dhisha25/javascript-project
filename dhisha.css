@@ -12,3 +12,31 @@
     color: blue;
     text-transform: uppercase;
 }
+.cardcontainer {
+    display: grid;
+    width: 98%;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    margin: 1%;
+    /* margin-left: 9%; */
+    /* margin-right: 20%; */
+    grid-gap: 50px;
+  }
+  .cardcontainer > div {
+    background-color: #f597e8;
+    text-align: center;
+    padding: 3px 3px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  @media screen and (max-width: 900px)
+  {
+.cardcontainer {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 1%;
+    margin-left: 9%;
+    margin-right: 20%;
+    grid-gap: 50px;
+}
+  }
