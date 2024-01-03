@@ -21,3 +21,18 @@
 .yellow{
     color: yellow;
 }
+.hover-shadow {
+    transform: scale(1.05);
+    border-radius: 20px !important;
+    transition: transform 0.3s ease;
+    color: #ffffff !important;
+    font-weight: 600;
+    background-color: #202b5d !important;
+  }
+  .hover-shadow:hover {
+    transform: scale(1.05) !important;
+    transition: transform 0.3s ease !important;
+    color: #ffffff;
+    font-weight: 600;
+    background-color: #272727 !important;
+  }

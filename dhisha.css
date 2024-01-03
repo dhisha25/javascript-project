@@ -40,3 +40,32 @@
     grid-gap: 50px;
 }
   }
+  .footer_bg_one {
+    background: url("../images/user1.jpeg")
+    no-repeat center center;
+    width: 100px;
+    height: 200px;
+    background-size: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    -webkit-animation: myfirst 5s linear infinite;
+  animation: myfirst 5s linear infinite;
+}
+@-webkit-keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}

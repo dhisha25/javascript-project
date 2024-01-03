@@ -37,7 +37,21 @@ function Vaishal (){
         <div className="cardcontainer8">
             <h1>eight</h1>
         </div>
+        
     </div>
+    <div class="toast show">
+    <div class="toast-header">
+      <strong class="me-auto">Bootstrap</strong>
+      <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+    </div>
+    <div class="toast-body">
+      <p>Card,Input,Lable,Modal,Toast</p>
+    </div>
+    <div class="toast-footer">
+        <button class="btn btn-warning" >close</button>
+    </div>
+  </div>
+  <div class="footer_bg_one"></div>
         </div>
     )
 }

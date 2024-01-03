@@ -1,0 +1,12 @@
+.animate{
+    animation: myfirst 10s linear infinite !important;
+    -webkit-animation: myfirst 10s linear infinite !important;
+    width: 88px;
+  height: 100px;
+  background-size: 100% !important;
+  animation-duration: 4s;
+  bottom: 0;
+  left: 38%;
+  position: absolute;
+  background: url("../images/flower1.jpeg");
+}

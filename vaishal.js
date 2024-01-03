@@ -8,6 +8,7 @@ import flower2 from "../images/flower2.jpeg";
 import flower3 from "../images/flower3.jpeg";
 import { Icon } from "@iconify/react";
 import { Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
+import "../project/vaishal.css"
 
 
 export default class Dhisha extends Component  {
@@ -17,7 +18,8 @@ export default class Dhisha extends Component  {
                    js:["react.js"],
                    image:[flower1,flower2,flower3],currentImageIndex: 0,
                    model1:false,
-                   close:false
+                   close:false,
+                   store:""
                }
     }
     nextImage = () => {
@@ -28,6 +30,7 @@ export default class Dhisha extends Component  {
     togglemodal5 = () => {
     this.setState({
       model1: !this.state.model1,
+     store:sessionStorage.setItem("storage","apple")
     });
   };
   closebtn = () => {
@@ -514,6 +517,15 @@ export default class Dhisha extends Component  {
         <label for="comment">Comments:</label>
 <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
         </form>
+        <button className="btn btn-success" onClick={()=>{
+          sessionStorage.setItem("storage","apple")
+        }}>navigate</button>
+        <br></br>
+        <br></br>
+        
+         {/* <img className="animate"src={user1}></img> */}
+         <div className="animate"></div>
+         
 
 
   </div>
