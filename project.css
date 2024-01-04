@@ -36,3 +36,18 @@
     font-weight: 600;
     background-color: #272727 !important;
   }
+  .align1 {
+    transform: scale(1.05);
+    border-radius: 20px !important;
+    transition: transform 0.3s ease;
+    color: #9ed800 !important;
+    font-weight: 600;
+    background-color: #2c001a !important;
+  }
+  .align1:hover {
+    transform: scale(1.05) !important;
+    transition: transform 0.3s ease !important;
+    color: #00e9dd;
+    font-weight: 600;
+    background-color: #6cdae9 !important;
+  }

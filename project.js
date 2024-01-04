@@ -12,7 +12,7 @@ export default class Project extends Component  {
         img:[dog,dog1],
         store1:sessionStorage.getItem("storage"),
         align:["computerscience","mechanical","civil","electrical","information technology","chemical engineering"],
-        dhisha:["chemistey","physics","english","bes","c language","maths"]
+        dhisha:["chemistry","physics","english","bes","c language","maths"]
       }
     }
     
@@ -76,6 +76,88 @@ export default class Project extends Component  {
                   
               ))}
             </div>
+            <div className="row">
+              {this.state.dhisha.map((service, index) => (
+                <div key={index} className="col-md-4 mb-4">
+                  <div className="card d-flex h-100  align1">
+                    <div className="card-body d-flex flex-column">
+                      {/* <h5 className="card-title">{service}</h5> */}
+                      <p
+                        className="card-text flex-fill"
+                        style={{ fontSize: "20px" }}
+                      >
+                        {service}
+                      </p>
+                    </div>
+                    </div>
+                </div>
+                 ))}
+            </div>
+            <div class="row">
+    <div class="col-sm-6 bg-primary text-white p-3">
+      first column
+    </div>
+    <div class="col-sm-6 bg-dark text-white p-3">
+    second column
+    </div>
+    
+  </div>
+  <div class="row">
+      <div class="col-sm-3 bg-primary text-white p-3">1 </div>
+      <div class="col-sm-3 bg-dark text-white p-3">2 </div>
+      <div class="col-sm-3 bg-primary text-white p-3">3 </div>
+      <div class="col-sm-3 bg-dark text-white p-3">4 </div>
+    </div>
+    <div class="row">
+      <div class="col-sm bg-primary text-white p-3">1 </div>
+      <div class="col-sm bg-dark text-white p-3">2 </div>
+      <div class="col-sm bg-primary text-white p-3">3 </div>
+      
+    </div>
+    <div class="row">
+      <div class="col-sm bg-primary text-white p-3">1 </div>
+      <div class="col-sm bg-dark text-white p-3">2 </div>
+      <div class="col-sm bg-primary text-white p-3">3 </div>
+      <div class="col-sm bg-dark text-white p-3">4 </div>
+      <div class="col-sm bg-primary text-white p-3">5 </div>
+      <div class="col-sm bg-dark text-white p-3">6 </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-5 bg-primary text-white p-3">1 </div>
+      <div class="col-sm-7 bg-dark text-white p-3">2 </div>
+     
+    </div>
+    <div class="row">
+      <div class="col-sm-3 col-md-6 bg-success text-white">
+        
+       first content
+      </div>
+      <div class="col-sm-9 col-md-6 bg-danger text-white">
+     second content
+
+      </div>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <div class="row">
+      <div class="col-sm-5 bg-primary text-white p-3">1 </div>
+      <div class="col-sm-7 bg-dark text-white p-3">2 </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3 bg-info text-white p-3">3 </div>
+      <div class="col-sm-9 bg-danger text-white p-3">4 </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4 bg-secondary text-white p-3">5 </div>
+      <div class="col-sm-8 bg-info text-white p-3">6 </div>
+  </div>
+  <div class="row">
+      <div class="col-sm-6 bg-warning text-white p-3">7</div>
+      <div class="col-sm-6 bg-success text-white p-3">8</div>
+      </div>
+    </div>
+
 </div>
     );
 }
