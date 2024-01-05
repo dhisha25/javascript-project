@@ -12,9 +12,36 @@ export default class Project extends Component  {
         img:[dog,dog1],
         store1:sessionStorage.getItem("storage"),
         align:["computerscience","mechanical","civil","electrical","information technology","chemical engineering"],
-        dhisha:["chemistry","physics","english","bes","c language","maths"]
+        dhisha:["chemistry","physics","english","bes","c language","maths"],
+        num1:0,
+        num2:0,
+        result:0,
+        color:"red"
       }
     }
+    Num1Change = (e) => {
+    this.setState({ num1: parseFloat(e.target.value, 10) || 0 });
+  };
+  Num2Change = (e) => {
+    this.setState({ num2: parseFloat(e.target.value, 10) || 0 });
+  };
+  addNumbers = () => {
+    const { num1, num2 } = this.state;
+    const result = num1 / num2;
+    this.setState({ result });
+  };
+  changeButtonColor = () => {
+    const newColor = this.getRandomColor();
+    this.setState({ color: newColor });
+  };
+  getRandomColor = () => {
+    const letters = '0123456789ABCDEF';
+    let color1 = '#';
+    for (let i = 0; i < 6; i++) {
+      color1 += letters[Math.floor(Math.random() * 16)];
+    }
+    return color1;
+  };
     
   // const fruit=["apple"," banana"," grapes"," watermelon"," pineapple"]
   // const fruit=[]
@@ -157,7 +184,32 @@ export default class Project extends Component  {
       <div class="col-sm-6 bg-success text-white p-3">8</div>
       </div>
     </div>
+<div>
+        <label>
+          Number 1:
+          <input type="text" value={this.state.num1} onChange={this.Num1Change} />
+        </label>
+        <br />
+        <label>
+          Number 2:
+          <input type="text" value={this.state.num2} onChange={this.Num2Change} />
+        </label>
 
+<br />
+        <button onClick={this.addNumbers}>Division</button>
+        <br />
+        <div>
+          Result: {this.state.result}
+        </div>
+      </div>
+      <div style={{ textAlign: 'center', marginTop: '20px' }}>
+        <button
+          onClick={this.changeButtonColor}
+          style={{ backgroundColor: this.state.color, padding: '10px', cursor: 'pointer' }}
+        >
+          Click me to change color
+        </button>
+      </div>
 </div>
     );
 }
