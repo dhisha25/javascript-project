@@ -1,0 +1,15 @@
+.language{
+transform: scale(1.10);
+    border-radius: 20px !important;
+    transition: transform 0.3s ease;
+    color: #7fff85 !important;
+    font-weight: 600;
+    background-color: #f072bb !important;
+  }
+  .language1:hover {
+    transform: scale(1.10) !important;
+    transition: transform 0.3s ease !important;
+    color: #f1b1e9;
+    font-weight: 600;
+    background-color: #230b7a !important;
+  }
