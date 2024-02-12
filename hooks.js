@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import './barchart.css';
 import './hooks.css';
  import axios from "axios";
+import Footer from "./footer";
 const ip="http://localhost:3000";
 class Hook extends Component{
     constructor(props){
@@ -140,6 +141,7 @@ if (res.status === 401) {
                         this.setState({ email: e.target.value })
                       }/>
     </div>
+    <Footer/>
     <div class="mb-3">
     <label for="pwd" class="form-label">Password:</label>
     <input type="password" class="form-control"  placeholder="Enter password" value={this.state.password} onChange={(e) =>
@@ -159,7 +161,7 @@ if (res.status === 401) {
     this.setState({ gender: e.target.value})}/>
     <button onClick={this.putcall} class="btn btn-primary" >Submit</button>
   </div>
-  
+ 
 
             </div>
         )
