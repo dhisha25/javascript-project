@@ -1,0 +1,80 @@
+.username {
+    width: 60%;
+    height: 40%;
+   
+}
+.resume {
+    padding: 10% 20% 10% 20%;
+   
+    
+}
+.heading-name {
+    text-align: left;
+    color: aqua;
+}
+.heading {
+    color: azure;
+    text-align: left;
+    
+    font-weight: bold;
+}
+.name1 {
+    background-color: rgb(0, 0, 0);
+}
+.name2 {
+    color: crimson;
+    font-size: 2.2em! important;
+    font-weight: 600! important;
+    animation: name2 is infinite;
+    text-align: left;
+}
+.color {
+    color: rgb(75, 236, 142);
+}
+.color1 {
+    color:azure;
+}
+.color3 {
+    color: azure;
+    font-size: larger;
+    font-weight: lighter;
+}
+.name3 {
+    background-color: rgb(6, 0, 43);
+}
+.image1 {
+    height: 40%;
+    width: 60%;
+    
+}
+.girl {
+    border-radius: 25px;
+    transition: transform 0.3s ease;
+}
+
+.icon1 {
+
+   width: 50px;
+   height: 40px;
+   
+}
+.icon2 {
+    text-align: center;
+   width: 50px;
+   height: 40px;
+}
+.purple {
+    color: rgb(111, 241, 133);
+    font-size: medium;
+    font-weight: 500px;
+  
+}
+.find {
+    color:rgb(240, 167, 116)
+}
+.icon3 {
+    color: beige;
+}
+.logo-container {
+    text-align:center;
+}

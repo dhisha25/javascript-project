@@ -1,0 +1,48 @@
+.about {
+    background-color: rgb(0, 0, 0);
+}
+.about2 {
+    color: rgb(62, 241, 62);
+}
+.about4 {
+    color: rgb(174, 248, 62);
+    font-size: larger;
+font-weight: lighter;
+}
+.login4 {
+    color: rgb(230, 171, 94);
+    font-size: larger;
+font-weight: lighter;
+
+}
+.girl1 {
+    width: 60%;
+    height: 40%;
+    border-radius: 10%;
+}
+.login {
+    color: azure;
+ text-align: left;
+}
+.login1 {
+color: azure;
+font-size: larger;
+font-weight: lighter;
+}
+.login2 {
+    color: azure;
+    font-size: larger;
+    font-weight: lighter;
+}
+.login3 {
+    color: azure;
+    font-size: larger;
+    font-weight: lighter;
+}
+.login5 {
+     color: azure;
+     text-align: center;
+     font-size: larger;
+     font-weight: lighter;
+}
+
