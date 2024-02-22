@@ -7,12 +7,12 @@
 .about4 {
     color: rgb(174, 248, 62);
     font-size: larger;
-font-weight: lighter;
+font-weight: 800;
 }
 .login4 {
     color: rgb(230, 171, 94);
     font-size: larger;
-font-weight: lighter;
+font-weight: 800;
 
 }
 .girl1 {
@@ -22,7 +22,7 @@ font-weight: lighter;
 }
 .login {
     color: azure;
- text-align: left;
+ text-align: center;
 }
 .login1 {
 color: azure;
@@ -44,5 +44,46 @@ font-weight: lighter;
      text-align: center;
      font-size: larger;
      font-weight: lighter;
+}
+.handicon {
+    width: 30px;
+    height: 30px;
+}
+.header {
+    color: azure;
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: center;
+}
+.green {
+    color: rgb(93, 241, 93);
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: center;
+}
+.js {
+    width: 200px;
+    height: 150px;
+}
+.mongodb {
+    width: 200px;
+    height: 150px;
+
+}
+.nodejs {
+    width: 200px;
+    height: 150px;
+}
+.python {
+    width: 200px;
+    height: 150px;
+}
+.react {
+    width: 200px;
+    height: 150px;
+}
+.cprogram {
+    width: 200px;
+    height: 150px;
 }
 
