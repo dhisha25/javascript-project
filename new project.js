@@ -3,10 +3,18 @@ import username from "../images1/username.jpg";
 import girl from "../images1/girl.png";
 import { Icon } from '@iconify/react';
 import "../css/new project.css"
+
+import Python from "../javascript/header";
 function Resume (){
     
     return(
+      <div>
+         <Python/>
+         <br></br>
+         <br></br>
+         <br></br>
       <div className="name1">
+       
         <div class="row" style={{margin: "0px"}}>
             <div class="col-lg-6 col-md-6 col-12">
                 <div class="resume">
@@ -130,7 +138,7 @@ function Resume (){
             </div>
            </div>
           </div>
-          
+          </div>
         
       
         
