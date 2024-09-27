@@ -1,18 +1,24 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App";
-import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter } from "react-router-dom";
+import express from "express"
+import mongoose from "mongoose"
+import bodyParser from "body-parser"
+import dotenv from "dotenv"
+import route from "./routes/userRoutes.js"
 
-import "./index.css";
+const app = express();
 
-import reportWebVitals from "./reportWebVitals";
+app.use(bodyParser.json());
+dotenv.config();
+const PORT = process.env.PORT || 5000;
+const MONGOURL = process.env.MONGOURL;
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>
-);
+mongoose.connect(MONGOURL).then(()=>{
+    console.log("Database connected successful.")
+    app.listen(PORT, ()=>{
+        console.log(`server is running on port $(PORT)`)
 
-reportWebVitals();
+    })
+})
+.catch((error) => console.log(error));
+
+
+app.use("/api/user", route);
